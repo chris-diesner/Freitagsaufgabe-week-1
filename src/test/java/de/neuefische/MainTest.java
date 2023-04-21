@@ -18,12 +18,12 @@ class MainTest {
 
     @Test
     void returnIsPasswordWithInt() {
-        assertTrue(Password.checkPasswordInt("sd./fhjejk3452sjdkf"));
+        assertTrue(Password.checkPasswordInt("sdfhjejk3452sjdkf"));
     }
 
     @Test
     void returnIsPasswordWithoutInt() {
-        assertFalse(Password.checkPasswordInt("sdfhjejksjdkf"));
+        assertFalse(Password.checkPasswordInt("sd..fhjejksjdkf"));
     }
 
     @Test

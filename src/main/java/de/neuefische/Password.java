@@ -10,7 +10,7 @@ public class Password {
     }
 
     public static boolean checkPasswordInt(String input) {
-        if (input.matches("(.*)[a-zA-z0-9](.*)")) {
+        if (input.matches("[a-zA-z0-9]*")) {
             return true;
         }
         return false;
