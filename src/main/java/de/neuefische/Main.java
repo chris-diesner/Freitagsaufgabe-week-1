@@ -19,8 +19,10 @@ public class Main {
             System.out.println("Dein Password hat keine Großbuchstaben");
         } else if (Password.checkBadPassword(pw) == true) {
             System.out.println("Das war zu simple");
+        } else if (Password.checkPasswordSpecialChar(pw) == false) {
+            System.out.println("Und nun noch mit Sonderzeichen");
         } else {
             System.out.println("Passt!");
         }
-    }
+    }//,.;:_!§$%&/(/)=?)
 }

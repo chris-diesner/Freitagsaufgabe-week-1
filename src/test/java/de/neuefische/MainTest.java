@@ -18,7 +18,7 @@ class MainTest {
 
     @Test
     void returnIsPasswordWithInt() {
-        assertTrue(Password.checkPasswordInt("sdfhjejk3452sjdkf"));
+        assertTrue(Password.checkPasswordInt("sdfh..jejk3452sjdkf"));
     }
 
     @Test
@@ -44,6 +44,11 @@ class MainTest {
     @Test
     void returnIsPasswordBadInput_Password123456() {
         assertTrue(Password.checkBadPassword("sdgeiufhgsD123456"));
+    }
+
+    @Test
+    void returnIsPasswordWithSpecialChar() {
+        assertTrue(Password.checkPasswordSpecialChar("sdgeiu.fhgsD123456"));
     }
 
 }
