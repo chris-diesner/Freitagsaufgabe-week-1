@@ -15,8 +15,10 @@ public class Main {
             System.out.println("Dein Password hat keine Zahlen");
         } else if (Password.checkPasswordOnlyInt(pw) == false) {
             System.out.println("Dein Password hat keine Buchstaben");
-        } else if (Password.checkPasswordCapital(pw) == false) {
-            System.out.println("Dein Password hat keine Großbuchstaben");
+        } else if (Password.checkPasswordUpperCase(pw) == false) {
+            System.out.println("Dein Password hat keinen Mix1 aus Groß-& Kleinbuchstaben");
+        } else if (Password.checkPasswordLowerCase(pw) == true) {
+            System.out.println("Dein Password hat keinen Mix2 aus Groß-& Kleinbuchstaben");
         } else if (Password.checkBadPassword(pw) == true) {
             System.out.println("Das war zu simple");
         } else if (Password.checkPasswordSpecialChar(pw) == false) {

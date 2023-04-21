@@ -16,8 +16,12 @@ public class Password {
         return false;
     }
 
-    public static boolean checkPasswordCapital(String input) {
+    public static boolean checkPasswordUpperCase(String input) {
         return ! input.equals(input.toLowerCase());
+    }
+
+    public static boolean checkPasswordLowerCase(String input) {
+        return input.equals(input.toUpperCase());
     }
 
     public static boolean checkPasswordOnlyInt(String input) {

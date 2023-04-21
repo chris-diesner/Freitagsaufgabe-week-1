@@ -28,12 +28,17 @@ class MainTest {
 
     @Test
     void returnIsPasswordWithCapitalLetters() {
-        assertTrue(Password.checkPasswordCapital("sdfhkDSsjdkf"));
+        assertTrue(Password.checkPasswordUpperCase("sdfhkDSsjdkf"));
+    }
+
+    @Test
+    void returnIsPasswordNotOnlyLowerLetters() {
+        assertTrue(Password.checkPasswordLowerCase("dfahadgha"));
     }
 
     @Test
     void returnIsPasswordWithoutCapitalLetters() {
-        assertFalse(Password.checkPasswordCapital("sdfhksjdkf"));
+        assertFalse(Password.checkPasswordUpperCase("sdfhksjdkf"));
     }
 
     @Test
