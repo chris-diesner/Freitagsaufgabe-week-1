@@ -33,7 +33,7 @@ class MainTest {
 
     @Test
     void returnIsPasswordNotOnlyLowerLetters() {
-        assertTrue(Password.checkPasswordLowerCase("dfahadgha"));
+        assertFalse(Password.checkPasswordLowerCase("dfahadgha"));
     }
 
     @Test
